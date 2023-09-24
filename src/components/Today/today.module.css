@@ -1,0 +1,60 @@
+.mainHead {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.linkWrapper {
+  display: flex;
+  align-items: center;
+}
+.todayLink {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary-grey, #b6b6b6);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+.imgToday {
+  margin-left: 6px;
+}
+.todayHead {
+  color: var(--color-primary-white, #fff);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media screen and (min-width: 834px) {
+  .componentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .todayHead {
+    line-height: 36px;
+    font-size: 30px;
+  }
+  .todayLink {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .mainHead {
+    margin-bottom: 24px;
+  }
+  .dailyGoal {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mainHead {
+    margin-bottom: 16px;
+  }
+  .waterGoal {
+    margin-right: 20px;
+  }
+}

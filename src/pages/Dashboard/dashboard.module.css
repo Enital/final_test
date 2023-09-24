@@ -1,0 +1,94 @@
+.dashboardContainer {
+  padding: 20px;
+  /* border: solid 1px red; */
+}
+
+.chartContainer {
+  display: flex;
+  /* flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  border-radius: 8px; */
+}
+
+.dashboardTitle {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboardTitleP {
+  font-size: 32px;
+}
+
+.dashboardTitleUl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btnToMain {
+  padding-right: 12px;
+}
+
+.toggleBtn {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.month {
+  font-size: 24px;
+}
+
+.arrowDownSvg {
+  margin-left: 12px;
+}
+
+.lastButton {
+  color: #FFF;
+  background-color: #050505;
+  text-align: start;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  width: 212px;
+  padding: 16px 12px;
+  border-radius: 12px;
+  background: #0F0F0F;
+  box-shadow: 0px 4px 14px 0px rgba(227, 255, 168, 0.20);
+}
+
+
+/* MOBILE  */
+
+.container {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TABLET */
+@media screen and (min-width: 834px) {
+  .container {
+    width: 834px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
