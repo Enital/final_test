@@ -21,22 +21,22 @@ const graphSlice = createSlice({
     isLoading: false,
     error: null,
   },
-  extraReducers: builder => {
-    builder
-      .addCase(fetchGraph.pending, handlePending)
-      .addCase(fetchGraph.fulfilled, handleFetchGraphFulfilled)
-      .addCase(fetchGraph.rejected, handleRejected);
-  },
-  // extraReducers: {
-  //   [fetchGraph.pending]: handlePending,
-
-  //   [fetchGraph.fulfilled](state, action) {
-  //     state.isLoading = false;
-  //     state.error = null;
-  //     state.items = action.payload;
-  //   },
-  //   [fetchGraph.rejected]: handleRejected,
+  // extraReducers: builder => {
+  //   builder
+  //     .addCase(fetchGraph.pending, handlePending)
+  //     .addCase(fetchGraph.fulfilled, handleFetchGraphFulfilled)
+  //     .addCase(fetchGraph.rejected, handleRejected);
   // },
+  extraReducers: {
+    [fetchGraph.pending]: handlePending,
+
+    [fetchGraph.fulfilled](state, action) {
+      state.isLoading = false;
+      state.error = null;
+      state.items = action.payload;
+    },
+    [fetchGraph.rejected]: handleRejected,
+  },
 });
 
 export const graphReducer = graphSlice.reducer;
