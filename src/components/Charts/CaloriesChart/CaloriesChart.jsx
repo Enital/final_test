@@ -27,7 +27,7 @@ ChartJS.register(
 export default function CaloriesChart() {
   const { graph } = useSelector(selectCharts);
   const labels = graph.days;
-  console.log(labels);
+  // console.log(labels);
 
   // const labels=[
   //   '2',
