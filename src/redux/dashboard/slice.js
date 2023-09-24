@@ -8,11 +8,11 @@ const handleRejected = (state, action) => {
   state.isLoading = false;
   state.error = action.payload;
 };
-const handleFetchGraphFulfilled = (state, action) => {
-  state.isLoading = false;
-  state.error = null;
-  state.items = action.payload;
-};
+// const handleFetchGraphFulfilled = (state, action) => {
+//   state.isLoading = false;
+//   state.error = null;
+//   state.items = action.payload;
+// };
 
 const graphSlice = createSlice({
   name: 'graph',
@@ -21,12 +21,6 @@ const graphSlice = createSlice({
     isLoading: false,
     error: null,
   },
-  // extraReducers: builder => {
-  //   builder
-  //     .addCase(fetchGraph.pending, handlePending)
-  //     .addCase(fetchGraph.fulfilled, handleFetchGraphFulfilled)
-  //     .addCase(fetchGraph.rejected, handleRejected);
-  // },
   extraReducers: {
     [fetchGraph.pending]: handlePending,
 
