@@ -31,7 +31,7 @@ const userPersistConfig = {
 const graphPersistConfig = {
   key: 'graph',
   storage,
-  whitelist: ['items'],
+  whitelist: ['items', 'graph'],
 };
 
 const persistedUserReducer = persistReducer(userPersistConfig, userReducer);
