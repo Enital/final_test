@@ -17,7 +17,7 @@ const handleFetchGraphFulfilled = (state, action) => {
 const graphSlice = createSlice({
   name: 'graph',
   initialState: {
-    items: {},
+    graph: {}, //11.45
     isLoading: false,
     error: null,
   },
