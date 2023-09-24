@@ -11,11 +11,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <BrowserRouter basename="/healthy_hub">
+        <BrowserRouter basename="/final_test">
           <App />
         </BrowserRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>
 );
-
